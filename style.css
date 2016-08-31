@@ -1,0 +1,168 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+* {
+	font-family:'Raleway';
+	-webkit-box:border-box;
+	box-sizing:border-box
+}
+body {
+	font-size:16px;
+}
+
+ul, li {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+h1 {font-family:'Raleway';}
+
+header{
+	width:100%;
+	height:60px;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#ccc;
+	padding:15px;
+}
+main {
+	margin-top:60px;
+	float:left;	
+	width:100%;
+}
+.homeLink {
+	font-size:24px;
+	line-height:0;
+	float:left;
+}
+.navigationLinks {
+	float:right;
+	line-height:30px;
+}
+
+.navigationLinks li {
+	float:left;
+}
+.navigationLinks li a {
+	padding:5px;
+	display:block;
+}
+.navigationLinks li a:hover {
+	color:#fff;
+}
+.search {
+	margin-top:50px;
+	position:relative;
+}
+.inputWrap {
+	width:96%;
+	margin:0;
+}
+
+.inputWrap input {
+	width:calc(100% - 55px);
+	height:45px;
+	font-size:18px;
+	padding:0 .5rem;
+	border-radius:4px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:6px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
+.spyGlass {
+	width:45px;
+	height:45px;
+	border-radius:4px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	cursor:pointer;
+}
+
+.spyGlass:hover {
+	background-color: #f2f2f2;
+}
+.fa-search {
+	font-size:20px;
+}
+	
+.leftRight {
+	float:left;
+	margin:30px 0 0 0;
+	border:1px solid #ccc;
+}
+.leftRight li {
+	float:left;
+	border-right:1px solid #ccc;
+}
+.leftRight li:last-child {
+	border-right:none;
+}
+
+.leftRight li a, .locationInfo {
+	display:block;
+	padding:10px;
+	color:#000;
+}
+.leftRight li a:hover {
+	background-color:#f2f2f2;
+}
+
+.resultsContainer {
+	float:left;
+	width:100%;
+}
+
+.results {
+	clear:both;
+	width:100%;
+	margin:30px auto 0;
+}
+.results a {
+	color:blue;
+	font-weight:bold;
+}
+
+.result-item {
+	margin-top:20px;
+	padding-left:20px;
+}
+.result-item span {
+	margin-right:10px;
+}
+.result-item:before {
+	content:'\f006';
+	font-family: 'FontAwesome';
+	margin-right:6px;
+	margin-left:-20px;
+}
+.result-item:hover:before {
+	color:yellow;
+}
+
+@media screen and (min-width:768px){
+	.search {
+		width:75%;
+		position:relative;
+		margin:50px auto 0;
+	}
+	.inputWrap {
+		width:50%;
+	}
+	.leftRight {
+		margin-left:12.5%;
+	}
+	.results {
+		width:75%;
+	}
+}
+
