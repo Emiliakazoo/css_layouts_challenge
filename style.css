@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
-* {
+html * {
 	font-family:'Raleway';
 	-webkit-box:border-box;
 	box-sizing:border-box
